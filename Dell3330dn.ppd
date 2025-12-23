@@ -1,0 +1,40 @@
+*PPD-Adobe: "4.3"
+*FormatVersion: "4.3"
+*FileVersion: "1.0"
+*LanguageEncoding: ISOLatin1
+*LanguageVersion: English
+*Manufacturer: "Dell"
+*Product: "(Dell 3330dn)"
+*NickName: "Dell 3330dn A4 FIX"
+*ShortNickName: "Dell 3330dn"
+*ModelName: "Dell 3330dn"
+*PCFileName: "DELL3330FIX.PPD"
+
+*cupsVersion: 1.4
+*cupsManualCopies: True
+*cupsFilter: "application/vnd.cups-postscript 0 -"
+
+*DefaultPageSize: A4
+*DefaultPaperDimension: A4
+*DefaultImageableArea: A4
+
+*PaperDimension A4: "595 842"
+*ImageableArea A4: "12 12 583 830"
+
+*OpenUI *PageSize: PickOne
+*OrderDependency: 10 AnySetup *PageSize
+*DefaultPageSize: A4
+*PageSize A4: "<</PageSize [595 842]>> setpagedevice"
+*CloseUI: *PageSize
+
+*OpenUI *InputSlot: PickOne
+*DefaultInputSlot: Auto
+*InputSlot Auto: "<</MediaPosition 0>> setpagedevice"
+*InputSlot Tray1: "<</MediaPosition 1>> setpagedevice"
+*CloseUI: *InputSlot
+
+*OpenUI *Resolution: PickOne
+*DefaultResolution: 600dpi
+*Resolution 600dpi: "<</HWResolution [600 600]>> setpagedevice"
+*Resolution 1200dpi: "<</HWResolution [1200 1200]>> setpagedevice"
+*CloseUI: *Resolution
